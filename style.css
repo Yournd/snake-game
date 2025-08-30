@@ -1,0 +1,90 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'VT323', monospace;
+}
+
+body,
+.snake {
+    background-color: #001407;
+}
+
+.game_board {
+    border-radius: 100px;
+    display: grid;
+    grid-template-columns: repeat(20, 20px);
+    grid-template-rows: repeat(20, 20px);
+    margin: 5px;
+}
+
+.game_border1 {
+    border: rgb(30, 78, 97) solid 10px;
+    border-radius: 30px;
+    box-shadow: inset 0 0 0 10px rgb(30, 78, 97);
+}
+
+.game_border2 {
+    border: rgb(71, 160, 196) solid 8px;
+    border-radius: 26px;
+    box-shadow: inset 0 0 0 10px rgb(71, 160, 196);
+}
+
+.game_border3 {
+    border: rgb(46, 115, 143) solid 30px;
+    border-radius: 20px;
+    box-shadow: inset 0 0 0 5px rgb(46, 115, 143);
+}
+
+#instructions {
+    position: absolute;
+    top: 60%;
+    color: #333;
+    width: 300px;
+    text-align: center;
+    text-transform: capitalize;
+    padding: 30px;
+    margin: 0;
+}
+
+#logo {
+    height: 200px;
+    width: auto;
+    position: absolute;
+}
+
+.scores {
+    display: flex;
+    justify-content: space-between;
+}
+
+#score {
+    color: rgb(71, 160, 196)
+}
+
+#score,
+#highScore {
+    font-size: 40px;
+    font-weight: bolder;
+    margin: 10px 0;
+}
+
+#highScore {
+    color: rgb(168, 208, 224);
+    display: none;
+}
+
+.game_border3 {
+    background-color: rgb(71, 160, 196);
+}
+
+.snake {
+    border:rgb(0, 9, 58) 3px solid;;
+}
+
+.food {
+    background-color: rgb(204, 55, 39);
+    border: rgb(255, 30, 0) 5px dotted;
+}
